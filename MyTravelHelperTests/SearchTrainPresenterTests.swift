@@ -46,10 +46,6 @@ class SearchTrainMockView:PresenterToViewProtocol {
     func saveFetchedStations(stations: [Station]?) {
         isSaveFetchedStatinsCalled = true
     }
-    
-    func checkTrainsAvailableFromSource(trainsList: [StationTrain]) -> Bool {
-        return trainsList.count > 0 ? true : false
-    }
 
     func showInvalidSourceOrDestinationAlert() {
         
